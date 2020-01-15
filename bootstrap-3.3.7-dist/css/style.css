@@ -1,0 +1,30 @@
+.em-text{
+color: #8B0000 !important;
+
+}
+
+.tekst1 {
+	color: white;
+}
+
+.tekst2 {
+	color: white;
+}
+
+
+
+.jumbotron{
+background-image: url(img/citaonica2.jpg) no-repeat top center;
+
+overflow: none;
+
+
+}
+.jumbotron h1{
+margin-top: 60px;
+}
+}
+.jumbotron .showcase-img{
+width: 75%;
+}
+
