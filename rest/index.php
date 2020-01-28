@@ -1,5 +1,5 @@
 <?php
-require 'flight/Flight.php';
+require 'rest/flight/Flight.php';
 require 'jsonindent.php';
 Flight::register('db', 'Database', array('citaonica'));
 $json_podaci = file_get_contents("php://input");
