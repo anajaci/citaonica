@@ -1,5 +1,5 @@
 <?php
-require 'flight/Flight.php';
+require '/flight/Flight.php';
 require 'jsonindent.php';
 Flight::register('db', 'Database', array('citaonica'));
 $json_podaci = file_get_contents("php://input");
@@ -44,7 +44,7 @@ Flight::route('POST /citaonica.json', function(){
 			$v = "'".$v."'";
 			$podaci_query[$k] = $v;
 		}
-	if ($db->insert("studenti", "idstudenta, ime, prezime, brojindeksa", array($podaci_query["idstudenta"],$podaci_query["ime"],$podaci_query["prezime"],$podaci_query["brojindeksa"]))){				
+	if ($db->insert("studenti", "idstudenta, ime, prezime, brojindeksa, vreme", array($podaci_query["idstudenta"],$podaci_query["ime"],$podaci_query["prezime"],$podaci_query["brojindeksa"],$podaci_query["vreme"]))){				
 				$odgovor["poruka"] = "Student je ucitan";
 				$json_odgovor = json_encode ($odgovor,JSON_UNESCAPED_UNICODE);
 				echo $json_odgovor;
