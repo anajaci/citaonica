@@ -1,7 +1,7 @@
 <?php
 class Database
 {
-private $hostname="localhost:3308";
+private $hostname="localhost:3306";
 private $username="root";
 private $password="";
 private $dbname;
